@@ -17,13 +17,7 @@
              sync-c="true" />
 
     <!-- Framework -->
-    <project path="." name="framework" remote="kjBot" revision="0.x">
-        <!-- Create config file-->
-        <copyfile src="./composer.json.example" dest="./composer.json" />
-        <copyfile src="./config.ini.example" dest="./config.ini" />
-        <copyfile src="./modules.php.example" dest="./modules.php" />
-        <copyfile src="./plugins.php.example" dest="./plugins.php" />
-    </project>
+    <project path="." name="framework" remote="kjBot" revision="0.x" />
 
     <!-- Custom repo -->
     <include name="snippets/kjBot.xml" />
