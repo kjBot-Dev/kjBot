@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Define remote -->
+    <remote name="github"
+            fetch="https://github.com/" />
+
+    <remote name="kjBot"
+            fetch="https://github.com/kjBot-Dev/" />
+
+    <remote name="kjBot-Modules"
+            fetch="https://github.com/kjBot-Modules/" />
+    
+    <default revision="refs/heads/master"
+             remote="github"
+             sync-j="4"
+             sync-c="true" />
+
+    <!-- Framework -->
+    <project path="." name="framework" remote="kjBot" revision="0.x">
+        <!-- Create config file-->
+        <copyfile src="./composer.json.example" dest="./composer.json" />
+        <copyfile src="./config.ini.example" dest="./config.ini" />
+        <copyfile src="./modules.php.example" dest="./modules.php" />
+        <copyfile src="./plugins.php.example" dest="./plugins.php" />
+    </project>
+
+    <!-- Custom repo -->
+    <include name="snippets/kjBot.xml" />
+
+</manifest>
