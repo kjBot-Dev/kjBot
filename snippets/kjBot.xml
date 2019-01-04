@@ -2,7 +2,7 @@
 <manifest>
 
     <project path="manifest" name="kjBot" remote="kjBot" />
-
-    
+    <project path="modules/kj415j45/CoreModule/" name="CoreModule" remote="kjBot-Modules" revision="0.x" />
+    <project path="modules/kj415j45/osu/" name="osu" remote="kjBot-Modules" revision="0.x" />
 
 </manifest>
